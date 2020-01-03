@@ -4,14 +4,25 @@ import java.util.*
 
 
 fun main() {
-    val temp: Int
-    println("Введите температуру воды:")
+
+    val timeNow: Int
+    val weatherIsGood: Boolean
+
     val scanner = Scanner(System.`in`)
-    temp = scanner.nextInt()
+    println("Сколько сейчас времени?")
+    timeNow = scanner.nextInt()
+    println("Какая сейчас погода, хорошая или плохая?")
+    weatherIsGood = scanner.nextBoolean()
     val result: String = when {
-        temp < 0 -> "Лед"
-        temp < 99 -> "Жидкое"
-        else -> "Пар"
+        timeNow in 7..23 && weatherIsGood -> {
+            "Идем гулять"
+        }
+        timeNow in 7..23 && !weatherIsGood -> {
+            "Читаем книгу"
+        }
+        else -> {
+            "Спать"
+        }
     }
     println(result)
 
