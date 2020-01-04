@@ -6,13 +6,11 @@ import kotlin.collections.ArrayList
 
 fun main() {
 
-    val listOfNumbers = ArrayList<Int>()
+    val listOfNumbers: MutableList<Int> = LinkedList<Int>()
     listOfNumbers.add(1)
     println(listOfNumbers.size)
-    listOfNumbers.remove(listOfNumbers.get(0))
+    listOfNumbers.remove(listOfNumbers[0])
     println(listOfNumbers.size)
-
-
 
 
 //    val timeNow: Int
