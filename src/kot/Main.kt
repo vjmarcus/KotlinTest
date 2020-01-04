@@ -1,16 +1,20 @@
 package kot
 
-import java.util.*
-import kotlin.collections.ArrayList
-
 
 fun main() {
+    for (i in 0..99) {
+        println(i)
+    }
 
-    val listOfNumbers: MutableList<Int> = LinkedList<Int>()
-    listOfNumbers.add(1)
-    println(listOfNumbers.size)
-    listOfNumbers.remove(listOfNumbers[0])
-    println(listOfNumbers.size)
+
+
+
+
+//    val listOfNumbers: MutableList<Int> = LinkedList<Int>()
+//    listOfNumbers.add(1)
+//    println(listOfNumbers.size)
+//    listOfNumbers.remove(listOfNumbers[0])
+//    println(listOfNumbers.size)
 
 
 //    val timeNow: Int
