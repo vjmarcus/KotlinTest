@@ -5,26 +5,34 @@ import java.util.*
 
 fun main() {
 
-    val timeNow: Int
-    val weatherIsGood: Boolean
+    val array: Array<Int?> = arrayOfNulls(10)
+    array[3] = null
+    println(array[3])
 
-    val scanner = Scanner(System.`in`)
-    println("Сколько сейчас времени?")
-    timeNow = scanner.nextInt()
-    println("Какая сейчас погода, хорошая или плохая?")
-    weatherIsGood = scanner.nextBoolean()
-    val result: String = when {
-        timeNow in 7..23 && weatherIsGood -> {
-            "Идем гулять"
-        }
-        timeNow in 7..23 && !weatherIsGood -> {
-            "Читаем книгу"
-        }
-        else -> {
-            "Спать"
-        }
-    }
-    println(result)
+
+
+
+
+//    val timeNow: Int
+//    val weatherIsGood: Boolean
+//
+//    val scanner = Scanner(System.`in`)
+//    println("Сколько сейчас времени?")
+//    timeNow = scanner.nextInt()
+//    println("Какая сейчас погода, хорошая или плохая?")
+//    weatherIsGood = scanner.nextBoolean()
+//    val result: String = when {
+//        timeNow in 7..23 && weatherIsGood -> {
+//            "Идем гулять"
+//        }
+//        timeNow in 7..23 && !weatherIsGood -> {
+//            "Читаем книгу"
+//        }
+//        else -> {
+//            "Спать"
+//        }
+//    }
+//    println(result)
 
 
     //    val month: Int
