@@ -1,14 +1,16 @@
 package kot
 
 import java.util.*
+import kotlin.collections.ArrayList
 
 
 fun main() {
 
-    val array: Array<Int?> = arrayOfNulls(10)
-    array[3] = null
-    println(array[3])
-
+    val listOfNumbers = ArrayList<Int>()
+    listOfNumbers.add(1)
+    println(listOfNumbers.size)
+    listOfNumbers.remove(listOfNumbers.get(0))
+    println(listOfNumbers.size)
 
 
 
