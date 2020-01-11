@@ -2,9 +2,42 @@ package kot
 
 
 fun main() {
-    for (i in 0..99) {
+
+    val array = arrayOf(1, 2, 3,4)
+    for (i in array) {
         println(i)
     }
+
+//    val array = arrayOfNulls<Int?>(10)
+//    println(array[3])
+
+//    val array = arrayOfNulls<Int?>(100)
+//
+//    for(i in array.indices) {
+//        array[i] = i
+//    }
+//
+//    for (i in array.indices) {
+//        println(array[i])
+//    }
+
+
+
+
+//    for (i in 100 downTo 0)
+//        println(i)
+
+//    for (i in intArray)
+//        println(i)
+
+
+//    val array = IntArray(101)
+//    for (i in array.indices) {
+//        array[i] = i
+//    }
+//    for (i in array) {
+//        println(i)
+//    }
 
 
 
