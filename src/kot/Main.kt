@@ -5,15 +5,10 @@ fun main() {
 
     val a = 4
     val b = 5
-    println(maxNum(a, b))
+    println(returnString("Mikhailov"))
 }
 
-
-fun maxNum(a: Int, b: Int): Int {
-    return if (a > b) {
-        a
-    } else b
-}
+fun returnString(string: String) : String =  string.substring(0, 5)
 
 //    val array = arrayOfNulls<Int?>(301)
 //    for (i in 300..600) {
