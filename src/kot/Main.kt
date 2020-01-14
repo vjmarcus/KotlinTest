@@ -3,10 +3,25 @@ package kot
 
 fun main() {
 
-    val array = arrayOf(1, 2, 3,4)
-    for (i in array) {
-        println(i)
-    }
+    val a = 4
+    val b = 5
+    println(maxNum(a, b))
+}
+
+
+fun maxNum(a: Int, b: Int): Int {
+    return if (a > b) {
+        a
+    } else b
+}
+
+//    val array = arrayOfNulls<Int?>(301)
+//    for (i in 300..600) {
+//        array[i - 300] = i
+//    }
+//    for ((index, i) in array.withIndex()) {
+//        array[index]
+//    }
 
 //    val array = arrayOfNulls<Int?>(10)
 //    println(array[3])
@@ -109,4 +124,3 @@ fun main() {
     //    val c: String? = ""
     //    val result: Int? = (a?.length?:0) + (b?.length?:0) + (c?.length?:0)
     //    println(result)
-}
