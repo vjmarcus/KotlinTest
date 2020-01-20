@@ -3,12 +3,46 @@ package kot
 
 fun main() {
 
-    val a = 4
-    val b = 5
-    println(returnString("Mikhailov"))
+    println(max(5, 10))
 }
+    fun max(a: Int, b: Int) : Int{
+        return if (a > b)
+            a
+        else {
+            b
+        }
+    }
 
-fun returnString(string: String) : String =  string.substring(0, 5)
+//    val numbers = mutableListOf(1, 123,1154,532,634,2,26,64,234)
+//    val result = sort(numbers)
+//    for (i in result) {
+//        println(i)
+//    }
+//}
+////Bubble sort
+//fun sort(numbers: MutableList<Int>): List<Int> {
+//    for (i in 1 until numbers.size) {
+//        for (j in numbers.size - 1 downTo i) {
+//            if (numbers[j] < numbers[j - 1]) {
+//                val temp = numbers[j]
+//                numbers[j] = numbers[j - 1]
+//                numbers[j - 1] = temp
+//            }
+//        }
+//    }
+//    return numbers
+//}
+//
+//
+//fun sum(vararg numbers: Int): Int {
+//    var result = 0
+//    for (i in numbers) {
+//        result += i
+//    }
+//    return result
+//}
+//
+//fun returnString(string: String): String = string.substring(0, string.length)
 
 //    val array = arrayOfNulls<Int?>(301)
 //    for (i in 300..600) {
@@ -32,8 +66,6 @@ fun returnString(string: String) : String =  string.substring(0, 5)
 //    }
 
 
-
-
 //    for (i in 100 downTo 0)
 //        println(i)
 
@@ -48,9 +80,6 @@ fun returnString(string: String) : String =  string.substring(0, 5)
 //    for (i in array) {
 //        println(i)
 //    }
-
-
-
 
 
 //    val listOfNumbers: MutableList<Int> = LinkedList<Int>()
@@ -82,40 +111,40 @@ fun returnString(string: String) : String =  string.substring(0, 5)
 //    println(result)
 
 
-    //    val month: Int
-    //    println("Введите номер месяца:")
-    //    val scanner = Scanner(System.`in`)
-    //    month = scanner.nextInt()
-    //    val result: String = when (month) {
-    //        in 3..6 -> {
-    //            "ЯНВАРЬ ФЕВРАЛЬ МАРТ"
-    //        }
-    //        in 7..21 -> {
-    //            "Зима"
-    //        }
-    //        else -> {
-    //            "Не найдено"
-    //        }
-    //    }
-    //    println("$result")
+//    val month: Int
+//    println("Введите номер месяца:")
+//    val scanner = Scanner(System.`in`)
+//    month = scanner.nextInt()
+//    val result: String = when (month) {
+//        in 3..6 -> {
+//            "ЯНВАРЬ ФЕВРАЛЬ МАРТ"
+//        }
+//        in 7..21 -> {
+//            "Зима"
+//        }
+//        else -> {
+//            "Не найдено"
+//        }
+//    }
+//    println("$result")
 
 
-    //    var count = 400
-    //    val food = if (count > 500) {
-    //        count -= 100
-    //        "Пицца"
-    //    } else if (count > 300) {
-    //        count -= 200
-    //        "Шаверма"
-    //    } else {
-    //        "Яблоко"
-    //    }
-    //    println(food)
-    //    println("Количество денег: $count, вы едите - $food, длина строки - ${food.length}")
+//    var count = 400
+//    val food = if (count > 500) {
+//        count -= 100
+//        "Пицца"
+//    } else if (count > 300) {
+//        count -= 200
+//        "Шаверма"
+//    } else {
+//        "Яблоко"
+//    }
+//    println(food)
+//    println("Количество денег: $count, вы едите - $food, длина строки - ${food.length}")
 
 
-    //    val a: String? = null
-    //    val b: String? = "234234"
-    //    val c: String? = ""
-    //    val result: Int? = (a?.length?:0) + (b?.length?:0) + (c?.length?:0)
-    //    println(result)
+//    val a: String? = null
+//    val b: String? = "234234"
+//    val c: String? = ""
+//    val result: Int? = (a?.length?:0) + (b?.length?:0) + (c?.length?:0)
+//    println(result)
