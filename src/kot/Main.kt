@@ -1,9 +1,26 @@
 package kot
 
+import java.lang.Exception
+
 
 fun main() {
-    println(paral(10))
+
 }
+
+val sum = {a: Int, b: Int -> a + b}
+
+
+
+
+    fun sum(a : String, b : String) : Int {
+        return try {
+            val numA = a.toInt();
+            val numB = b.toInt();
+            numA * numB
+        } catch (e: Exception) {
+            0
+        }
+    }
 
     fun paral(a: Int, b: Int = a, c: Int = a) = a * b * c
 
