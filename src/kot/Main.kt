@@ -2,24 +2,42 @@ package kot
 
 
 fun main() {
-
-    println(sum(5, 10, 15))
+    println(paral(10))
 }
-    fun sum(vararg numbers: Int) : Int {
-        var result = 0
-        for (i in numbers) {
-            result += i
+
+    fun paral(a: Int, b: Int = a, c: Int = a) = a * b * c
+
+
+    fun printName(name: String = "", lastName: String = "", patronymic: String = "") {
+        if (name.isNotEmpty()){
+            println("Name $name")
         }
-        return result
+        if (lastName.isNotEmpty()) {
+            println("Surname $lastName")
+        }
+        if (patronymic.isNotEmpty()) {
+            println("Patronymic $patronymic")
+        }
     }
 
-    fun max(a: Int, b: Int) : Int{
-        return if (a > b)
-            a
-        else {
-            b
-        }
-    }
+
+
+
+//    fun sum(vararg numbers: Int) : Int {
+//        var result = 0
+//        for (i in numbers) {
+//            result += i
+//        }
+//        return result
+//    }
+//
+//    fun max(a: Int, b: Int) : Int{
+//        return if (a > b)
+//            a
+//        else {
+//            b
+//        }
+//    }
 
 //    val numbers = mutableListOf(1, 123,1154,532,634,2,26,64,234)
 //    val result = sort(numbers)
