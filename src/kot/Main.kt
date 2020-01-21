@@ -3,8 +3,16 @@ package kot
 
 fun main() {
 
-    println(max(5, 10))
+    println(sum(5, 10, 15))
 }
+    fun sum(vararg numbers: Int) : Int {
+        var result = 0
+        for (i in numbers) {
+            result += i
+        }
+        return result
+    }
+
     fun max(a: Int, b: Int) : Int{
         return if (a > b)
             a
