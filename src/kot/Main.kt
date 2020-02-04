@@ -4,38 +4,57 @@ import java.lang.Exception
 
 
 fun main() {
-
+    println(sum("11", "23"))
 }
 
-val sum = {a: Int, b: Int -> a + b}
+fun sum(a: String, b: String): Int {
+    val a = a.toInt();
+    val b = b.toInt();
+    return a + b
+}
 
 
 
 
-    fun sum(a : String, b : String) : Int {
-        return try {
-            val numA = a.toInt();
-            val numB = b.toInt();
-            numA * numB
-        } catch (e: Exception) {
-            0
-        }
-    }
-
-    fun paral(a: Int, b: Int = a, c: Int = a) = a * b * c
 
 
-    fun printName(name: String = "", lastName: String = "", patronymic: String = "") {
-        if (name.isNotEmpty()){
-            println("Name $name")
-        }
-        if (lastName.isNotEmpty()) {
-            println("Surname $lastName")
-        }
-        if (patronymic.isNotEmpty()) {
-            println("Patronymic $patronymic")
-        }
-    }
+
+
+
+
+
+
+
+
+//
+//
+//
+//
+//
+//    fun sum(a : String, b : String) : Int {
+//        return try {
+//            val numA = a.toInt();
+//            val numB = b.toInt();
+//            numA * numB
+//        } catch (e: Exception) {
+//            0
+//        }
+//    }
+//
+//    fun paral(a: Int, b: Int = a, c: Int = a) = a * b * c
+//
+//
+//    fun printName(name: String = "", lastName: String = "", patronymic: String = "") {
+//        if (name.isNotEmpty()){
+//            println("Name $name")
+//        }
+//        if (lastName.isNotEmpty()) {
+//            println("Surname $lastName")
+//        }
+//        if (patronymic.isNotEmpty()) {
+//            println("Patronymic $patronymic")
+//        }
+//    }
 
 
 
