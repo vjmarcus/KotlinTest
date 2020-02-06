@@ -1,4 +1,4 @@
-package kot.functional
+package functional
 
 fun main() {
     val array = (0..1000).toList()

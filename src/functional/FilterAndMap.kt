@@ -1,6 +1,4 @@
-package kot.functional
-
-import kotlin.random.Random
+package functional
 
 fun main() {
     val listOfNumbers = mutableListOf<Int>()

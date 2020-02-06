@@ -1,16 +1,10 @@
 package kot
 
-import java.lang.Exception
-
+import user.UserJava
 
 fun main() {
-    println(sum("11", "23"))
-}
-
-fun sum(a: String, b: String): Int {
-    val a = a.toInt();
-    val b = b.toInt();
-    return a + b
+    val userJava = UserJava("vjmarcus@list.ru")
+    println(userJava.email)
 }
 
 

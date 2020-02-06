@@ -1,4 +1,4 @@
-package kot.functional
+package functional
 
 fun main() {
     // После стрелки то, что хотим вернуть, анонимная функция без имени, лямбда выражение
