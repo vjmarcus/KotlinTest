@@ -1,6 +1,6 @@
 package kot
 
-import user.UserJava
+import classes.UserJava
 
 fun main() {
     val userJava = UserJava("vjmarcus@list.ru")

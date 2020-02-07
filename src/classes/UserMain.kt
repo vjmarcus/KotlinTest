@@ -1,4 +1,4 @@
-package user
+package classes
 
 fun main() {
     val userJava = UserJava("vjmarcus@list.ru")
