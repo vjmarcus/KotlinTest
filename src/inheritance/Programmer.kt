@@ -1,7 +1,7 @@
 package inheritance
 
-class Programmer (language: String): Worker("Oleg", 23) {
+class Programmer (name:String, age: Int, var language: String): Worker(name, age) {
     override fun worked() {
-        println("Пишу код")
+        println("Пишу код на $language")
     }
 }

@@ -4,15 +4,10 @@ fun main() {
     val dog = Dog(4f)
     println(dog.habitat)
     println()
-    val programmer = Programmer("Java")
-    val student = Worker("Kolya", 23)
-    val professor = Worker("Evgeniy victorovich", 53)
-    val workers = mutableListOf<Worker>()
-    workers.add(student)
-    workers.add(programmer)
-    workers.add(professor)
-    for (i in workers){
-        println(i.worked())
-    }
+    val programmer = Programmer("Oleg", 35, "Kotlin")
+    val programmer2 = Programmer("aSdf", 23, "Java")
+    val worker = Worker("Worker", 34)
+    val worker2 = Worker("Worker2", 32)
+    programmer.worked()
 
 }
