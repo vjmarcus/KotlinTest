@@ -15,4 +15,26 @@ fun main() {
     for (cleaner in cleaners){
         cleaner.clean()
     }
+    println()
+    val car: Transport = Car()
+    val bicycle: Transport =  Bicycle()
+
+
+    // Anonymous class
+    travel(object : Transport("Автобус") {
+        override fun drive() {
+            println("Автобус едет")
+        }
+    })
+
+    val sportsman = Sportsman()
+    sportsman.callWaterboy(object : Waterboy {
+        override fun bringWater() {
+            println("Вода принесена")
+        }
+    })
+}
+
+fun travel(transport: Transport){
+    transport.drive()
 }
