@@ -1,8 +1,8 @@
-package MyList
+package Generic
 
 interface MyList <T>{
 
-    fun get(index: Int) : T
+    operator fun get(index: Int) : T
     fun add(string: T)
     fun delete(element:T)
     fun removeAt(index: Int)
