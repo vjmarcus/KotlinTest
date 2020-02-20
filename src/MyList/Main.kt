@@ -5,7 +5,7 @@ import java.lang.IndexOutOfBoundsException
 import java.util.*
 
 fun main() {
-    val list : MyList = MyArrayList()
+    val list : MyList<String> = MyArrayList()
     for (i in 0..100){
         list.add("$i")
     }
@@ -15,20 +15,20 @@ fun main() {
     }
 }
 
-class MyArrayList : MyList {
-    var array = arrayOfNulls<String>(10)
+class MyArrayList<T> : MyList<T> {
+    var array = arrayOfNulls<Any>(10)
     var size = 0
 
-    override fun get(index: Int): String {
+    override fun get(index: Int): T {
         if (index in 0 until size){
             array[index]?.let {
-                return it
+                return it as T
             }
         }
         throw IndexOutOfBoundsException()
     }
 
-    override fun add(string: String) {
+    override fun add(string: T) {
         if (size >= array.size){
             array = array.copyOf(array.size * 2)
         }
@@ -36,7 +36,7 @@ class MyArrayList : MyList {
         size++
     }
 
-    override fun delete(element: String) {
+    override fun delete(element: T) {
         for ((index, string) in array.withIndex()){
             if (string == element){
                 removeAt(index)
