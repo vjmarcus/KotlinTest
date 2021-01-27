@@ -1,4 +1,4 @@
-package Generic
+package Generics
 
 class Dog {
     private lateinit var a: String

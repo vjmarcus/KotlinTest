@@ -1,4 +1,4 @@
-package Generic
+package Generics
 
 interface MyList <T>{
 

@@ -1,4 +1,4 @@
-package Generic
+package Generics
 
 import java.lang.IndexOutOfBoundsException
 
